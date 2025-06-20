@@ -1,0 +1,277 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #000;
+  overflow-x: hidden;  /* prevent horizontal scroll */
+  overflow-y: auto;    /* allow vertical scroll */
+
+}
+
+/* Header and Navigation */
+header, .middle-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  background-color: #fff;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  gap:2rem;
+ 
+}
+
+.intro {
+  max-width: 50%;
+  margin-left: 200px;
+}
+
+.hello {
+  font-size: 1.5rem;
+  color: #999;
+  margin-bottom: 0.5rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero h1 span {
+  color: #ffc107;
+}
+
+.role {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.buttons {
+  margin-top: 2rem;
+}
+
+
+
+.social {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.hero-img img {
+  width: 600px;
+  height: 600px;
+  z-index: 1;
+  position: relative;
+  margin-right: 120px;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  gap: 2rem;
+  padding: 5rem 5rem;
+  position: relative;
+  /* background-color: #f9f9f9; */
+  
+}
+
+.content-column {
+  max-width: 60%;
+  /* position: relative; */
+  z-index: 2;
+  text-align: justify;
+  margin-left: 5%;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-divider {
+  height: 2px;
+  background: #000;
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+.about p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Graphics */
+.graphic-column {
+  position: relative;
+  width: 0%;
+  min-width: 300px;
+}
+
+.hand-graphic {
+  width: 200px;
+  position: absolute;
+  bottom: 150px;
+  left: -50px;
+  z-index: 2;
+}
+
+.blob-yellow {
+  position: absolute;
+  bottom: -20px;
+  left: 180px;
+  width: 200px;
+  height: 180px;
+  background: #fff500;
+    border-radius: 60% 10% 120% 90%;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.blob-right-yellow {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  width: 250px;
+  height: 250px;
+  background: #fff500;
+  border-radius: 60% 40% 60% 40%;
+  z-index: 0;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.gray-circle {
+  position: absolute;
+  bottom: 10px;
+  right: 80px;
+  width: 90px;
+  height: 90px;
+  background: #e0e0e0;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.gray-shape {
+  position: absolute;
+  top: -40px;
+  left: -60px;
+  width: 160px;
+  height: 160px;
+  background: #d3d3d3;
+  border-radius: 60% 40% 60% 40%;
+  z-index: 0;
+}
+.icon-set {
+  position: absolute;
+   /* Adjust to move below the pointer */
+  /* left: 50%; */
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 1.2rem;
+  z-index: 3;
+  margin-top: 15%
+}
+.social a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  text-align: center;
+  color: #000;
+  margin: 5px 0;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s, color 0.3s;
+  margin-left: -50%;
+}
+
+.social a:hover {
+  background-color: #000;
+  color: #fff;
+}
+.icon-set a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  text-align: center;
+  color: #000;
+  margin: -1px 0;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s, color 0.3s;
+  bottom: -20px;
+}
+
+.icon-set a:hover {
+  background-color: #000;
+  color: #fff;
+}
+.cv {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  background-color: #f97316;   /* Orange */
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.cv:hover {
+  background-color: #ea580c;   /* Darker orange */
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  background-color: #000;      /* Black */
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #333;      /* Slightly lighter black on hover */
+}
